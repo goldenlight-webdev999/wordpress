@@ -863,7 +863,16 @@ a:focus {
     background: #fff;
     margin: 5px 0px 5px 5px;
     display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+.top-social .fa-top:hover, .top-social .fa-top :focus {
+	color: #fff;
+	background: #000;
+} 
 
 #masthead {
     position: relative;
@@ -950,8 +959,15 @@ a:focus {
 	font-weight: bold;
 	font-size: 22px;
 	vertical-align: middle;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-
+.site-call-info .call-caption a:hover, .site-call-info .call-caption a:focus {
+	color: #ffcb2a;
+}
 .site-top-right {
 	float: right;
 	margin-right: 60px;
@@ -3635,10 +3651,15 @@ ul.products.col-4 li:nth-last-child(-n+4) {
 #call-to-action .col.contact-btn span {
 	color: #fff;
     background-color: #ffcb2a;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 #call-to-action .col.contact-btn span:hover, #call-to-action .col.contact-btn span:focus {
 	background: #000;
@@ -4393,6 +4414,11 @@ ul.products.col-4 li:nth-last-child(-n+4) {
     color: #28cce5;
     text-decoration: underline;
 }
+#colophon a:hover b,
+#colophon a:focus b{
+    color: #28cce5;
+    text-decoration: underline;
+}
 #colophon .widget-title, 
 #colophon .widgettitle {
     color: #28cce5;
@@ -4404,6 +4430,11 @@ ul.products.col-4 li:nth-last-child(-n+4) {
 #colophon .top-social .fa-top {
 	background-color: #28cce5;
 	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 #colophon .top-social .fa-top:hover {
 	background-color: #fff;
@@ -4603,6 +4634,8 @@ ul.products.col-4 li:nth-last-child(-n+4) {
 	margin-bottom: 50px; 
     font-size: 24px;
     font-weight: bold;
+    height: 0px;
+    cursor: pointer;
 }
 
 #our-services .radio-button-wrapper {
@@ -5096,6 +5129,12 @@ ul.products.col-4 li:nth-last-child(-n+4) {
 	    width: 500px;
 	    margin: 0px auto;
 	}
+	#our-services .radio-button-wrapper {
+		max-width: 50%;
+	}
+	#our-services .entry-content [type=radio] + img {	
+	    padding: 20px 40px 80px;	
+	}
 }
 @media screen and (max-width: 1023px) {
 	#masthead {
@@ -5227,7 +5266,7 @@ ul.products.col-4 li:nth-last-child(-n+4) {
 	}
 	.page-section {
 	    padding: 60px 0;
-	}
+	}	
 }
 
 @media screen and (max-width: 992px) {
@@ -5341,6 +5380,13 @@ ul.products.col-4 li:nth-last-child(-n+4) {
 	}
 	#latest-posts .featured-content.bottom {
 	    margin-bottom: 40px;
+	}
+	.form-nav .btn {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.image-radio .radio-label {
+		font-size: 16px;
 	}
 
 }
@@ -5706,6 +5752,10 @@ ul.products.col-4 li:nth-last-child(-n+4) {
 	#comments ol.children .comment-content:before {
 	    border-right-color: transparent;
     	border-bottom-color: #f7f7f7;
+	}
+	.form-nav .btn {
+	    padding-left: 15px;
+	    padding-right: 15px;
 	}
 }
 

@@ -112,7 +112,7 @@ if ( ! function_exists( 'pet_business_render_service_section' ) ) :
                     foreach ( $content_details as $content ) : 
                         $class = ( empty( $content['image'] ) ) ? 'no-post-thumbnail' : 'has-post-thumbnail';
                         ?> 
-                            <div class="entry-container wrapper">                                
+                            <div class="entry-container">                                
 
                                 <?php if ( ! empty( $content['content'] ) ) : ?>
                                     <div class="entry-content">
